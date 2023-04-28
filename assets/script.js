@@ -83,7 +83,14 @@ let eleContainer = document.getElementById("contCard");
 for (let i = 0; i < arrTeam.length; i++) {
     const eleTeam = arrTeam[i];
     console.log(`${i}: ${eleTeam.firstName} - ${eleTeam.role} - ${eleTeam.photo}`);
-    eleContainer.innerHTML += `<img class="m-3" src="${eleTeam.photo}" alt="ciaooooo">`;
+    eleContainer.innerHTML += 
+    `<div class="card p-2 m-2 col-3">
+        <img src="${eleTeam.photo}" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+        <h5 class="card-title ">${eleTeam.firstName}</h5>
+        <h6 class="card-title ">${eleTeam.role}</h6>
+    </div>
+  </div>  `;
 
     
 };
