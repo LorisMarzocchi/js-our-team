@@ -87,7 +87,7 @@ for (let i = 0; i < arrTeam.length; i++) {
     `<div class="card p-2 m-2 col-3">
         <img src="${eleTeam.photo}" class="card-img-top" alt="...">
     <div class="card-body text-center">
-        <h5 class="card-title ">${eleTeam.firstName}</h5>
+        <h5 class="card-title ">${eleTeam.firstName} ${eleTeam.lastName}</h5>
         <h6 class="card-title ">${eleTeam.role}</h6>
     </div>
   </div>  `;
